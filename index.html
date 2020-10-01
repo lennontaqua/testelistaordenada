@@ -4,22 +4,40 @@
         <meta charset="UTF8">
     </head>
     <BODY>
-        <a href="#conteudo">
-            Link
-        </a>
+    <h1>
+        Cadastro de Aluno
+    </h1>
 
-        <p style="margin: 500px;">
-            Conteúdo 1
-        </p>
+    <form action="enviar.php" method="post">
+        <label for="tNome">
+            Nome:
+        </label>
+        <br/>
+        <input type="text" name="txtNome" id="tNome" size="100" maxlength="100"
+               placeholder="Digite o Nome" required>
+        <br/>
+        <br/>
 
-        <p style="margin: 500px;">
-            Conteúdo 2
-        </p>
+        <label for="tEmail">
+            Email:
+        </label>
+        <br/>
+        <input type="email" name="txtEmail" id="tEmail" size="100" maxlength="100"
+               placeholder="Digite o Email" required>
+        <br/>  
+        <br/>
 
-        <p style="margin: 500px;">
-            <a name="conteudo">
-                Conteúdo 3
-            </a>    
-        </p>
+        <label for="tCpf">
+            C.P.F.:
+        </label>
+        <br/>
+        <input type="text" name="txtCpf" id="tCpf" size="20" maxlength="20"
+               placeholder="Digite o C.P.F." required>
+        <br/>
+        <br/>
+                  
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Cancelar">
+    </form>
    </BODY> 
 </html>          
